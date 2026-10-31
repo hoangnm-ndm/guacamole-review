@@ -1,0 +1,292 @@
+{
+  "project": "apache-guacamole",
+  "reviewDate": "2026-10-31",
+  "skill": "review-source",
+  "level": "chuyen-sau",
+  "scope": "full",
+  "mode": "full",
+  "commit": {
+    "guacamole-client": "31d2a6f6a",
+    "guacamole-server": "5f9bb3b4"
+  },
+  "version": "1.6.1",
+  "stack": {
+    "backend": [
+      "c99",
+      "autotools",
+      "freerdp",
+      "libssh2",
+      "libvncclient",
+      "libtelnet",
+      "libwebsockets",
+      "openssl",
+      "java-1.8-target",
+      "maven",
+      "guice",
+      "jersey",
+      "jackson",
+      "mybatis",
+      "tomcat-9"
+    ],
+    "frontend": [
+      "angularjs-1.8.3",
+      "webpack-5",
+      "guacamole-common-js"
+    ],
+    "database": [
+      "mysql",
+      "postgresql",
+      "sqlserver"
+    ],
+    "test": [
+      "cunit",
+      "junit-4",
+      "jasmine",
+      "karma"
+    ],
+    "infra": [
+      "docker",
+      "github-actions"
+    ]
+  },
+  "references": [
+    "cap-do-review.md",
+    "report-format.md",
+    "scoring-rubric.md",
+    "architecture-modular.md",
+    "security.md",
+    "malware-supply-chain.md",
+    "testing-docs-ops.md",
+    "clean-code/principles.md",
+    "clean-code/code-smells.md",
+    "clean-code/naming-consistency.md",
+    "backend/common.md",
+    "monorepo.md",
+    "database.md",
+    "frontend/common.md",
+    "product-analysis.md",
+    "checklist-template.md"
+  ],
+  "malwareStatus": "none",
+  "malwareScanned": [
+    "obfuscation",
+    "dynamic-exec",
+    "network-domains",
+    "webhooks",
+    "backdoor",
+    "miner",
+    "install-hooks",
+    "binaries",
+    "hidden-unicode",
+    "lockfile-resolved",
+    "ci-workflows",
+    "dockerfiles",
+    "agent-config-prompt-injection",
+    "git-history-recent-authors",
+    "secrets"
+  ],
+  "scores": {
+    "groups": [
+      {
+        "key": "functionality",
+        "weight": 8,
+        "score": 8.25,
+        "contribution": 6.6,
+        "issues": [
+          "ERR-07",
+          "ERR-08",
+          "ERR-09",
+          "ERR-10"
+        ]
+      },
+      {
+        "key": "architecture",
+        "weight": 15,
+        "score": 6.0,
+        "contribution": 9.0,
+        "issues": [
+          "ARCH-01",
+          "ARCH-02",
+          "ARCH-03",
+          "ARCH-04",
+          "ARCH-05",
+          "BE-01"
+        ]
+      },
+      {
+        "key": "security",
+        "weight": 17,
+        "score": 1.0,
+        "contribution": 1.7,
+        "issues": [
+          "SEC-01",
+          "SEC-02",
+          "SEC-03",
+          "SEC-04",
+          "SEC-05",
+          "SEC-06",
+          "SEC-07",
+          "SEC-08",
+          "SEC-09",
+          "SEC-10",
+          "SEC-11",
+          "SEC-12",
+          "SEC-13",
+          "SEC-14",
+          "SEC-15",
+          "SEC-16",
+          "SEC-17",
+          "SEC-18",
+          "SEC-19",
+          "SEC-20",
+          "SEC-21",
+          "SEC-22",
+          "SEC-23",
+          "SEC-24",
+          "SEC-25",
+          "SEC-26",
+          "SEC-27",
+          "SEC-28",
+          "SEC-29"
+        ]
+      },
+      {
+        "key": "supplyChain",
+        "weight": 8,
+        "score": 9.0,
+        "contribution": 7.2,
+        "issues": [
+          "MAL-01"
+        ]
+      },
+      {
+        "key": "database",
+        "weight": 10,
+        "score": 8.0,
+        "contribution": 8.0,
+        "issues": [
+          "DB-01",
+          "DB-02",
+          "DB-03",
+          "DB-04",
+          "DB-05"
+        ]
+      },
+      {
+        "key": "validation",
+        "weight": 8,
+        "score": 5.0,
+        "contribution": 4.0,
+        "issues": [
+          "VAL-01",
+          "VAL-02",
+          "VAL-03",
+          "ERR-01",
+          "ERR-02",
+          "ERR-03",
+          "ERR-04",
+          "ERR-05",
+          "ERR-06"
+        ]
+      },
+      {
+        "key": "cleanCode",
+        "weight": 10,
+        "score": 7.5,
+        "contribution": 7.5,
+        "issues": [
+          "CODE-01",
+          "CODE-02",
+          "CODE-03",
+          "CODE-04",
+          "CODE-05",
+          "CODE-06",
+          "PERF-01"
+        ]
+      },
+      {
+        "key": "naming",
+        "weight": 6,
+        "score": 9.25,
+        "contribution": 5.55,
+        "issues": [
+          "NAME-01",
+          "NAME-02",
+          "NAME-03"
+        ]
+      },
+      {
+        "key": "testing",
+        "weight": 10,
+        "score": 5.0,
+        "contribution": 5.0,
+        "issues": [
+          "TEST-01",
+          "TEST-02",
+          "TEST-03",
+          "TEST-04"
+        ]
+      },
+      {
+        "key": "docsOps",
+        "weight": 8,
+        "score": 6.0,
+        "contribution": 4.8,
+        "issues": [
+          "OPS-01",
+          "OPS-02",
+          "OPS-03",
+          "OPS-04",
+          "OPS-05",
+          "DOC-01",
+          "DOC-02"
+        ]
+      }
+    ],
+    "total100": 59.35,
+    "total10": 6.0,
+    "grade": null,
+    "verdict": "Cần cải thiện trước release",
+    "capsApplied": [],
+    "adjustments": [
+      "architecture +1: lõi process isolation và plugin API đáng làm mẫu",
+      "security +1: nền tảng có nhiều điểm mạnh, mô tả 3-4 hợp hơn nhưng chỉ được điều chỉnh ±1",
+      "testing +1: test hiện có là test thật"
+    ],
+    "releaseConditions": [
+      "SEC-05",
+      "SEC-08",
+      "SEC-06",
+      "SEC-10",
+      "SEC-09",
+      "SEC-18",
+      "SEC-22",
+      "SEC-21",
+      "SEC-17"
+    ]
+  },
+  "counts": {
+    "Critical": 0,
+    "High": 8,
+    "Medium": 34,
+    "Low": 34,
+    "principle": 72,
+    "standard": 4,
+    "insufficientData": 1
+  },
+  "topIssues": [
+    "SEC-01",
+    "SEC-02",
+    "SEC-03"
+  ],
+  "unverified": [
+    "Không có PoC cho SEC-01, SEC-02, SEC-03, SEC-07, SEC-11, SEC-21 (review tĩnh)",
+    "Chưa chạy npm audit / osv-scanner / dependency-check; ngày EOL theo hiểu biết chung",
+    "SEC-30 RADIUS Blast-RADIUS: chưa đọc JRadius",
+    "Cấu hình reverse proxy, Tomcat, manual chính thức nằm ngoài repo",
+    "Nội bộ thư viện FreeRDP/libvncclient/libssh2/java-saml/jose4j/mybatis-guice",
+    "Nội dung từng file code đã bị xoá trong lịch sử git"
+  ],
+  "envSync": "not-applicable (không có cặp file env mẫu/thật trong cả hai repo)",
+  "history": []
+}

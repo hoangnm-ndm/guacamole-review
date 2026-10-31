@@ -1,0 +1,4 @@
+# Hai repo upstream Apache Guacamole được quản lý riêng (git clone độc lập)
+/guacamole-client/
+/guacamole-server/
+.DS_Store
